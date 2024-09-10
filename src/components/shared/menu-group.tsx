@@ -1,4 +1,4 @@
-import MenuItem from "@/components/shared/menu-item";
+import { MenuItem } from "@/components/shared";
 import { cn } from "@/lib/utils";
 import { useSidebarToggle } from "@/stores/use-sidebar-toggle";
 import { ISideNavItemGroup } from "@/types/type-nav";
@@ -7,7 +7,7 @@ interface IMenuGroupProps {
     menuGroup: ISideNavItemGroup;
 }
 
-const MenuGroup = ({ menuGroup }: IMenuGroupProps) => {
+export const MenuGroup = ({ menuGroup }: IMenuGroupProps) => {
     const { toggleCollapse } = useSidebarToggle();
     return (
         <>
@@ -25,5 +25,3 @@ const MenuGroup = ({ menuGroup }: IMenuGroupProps) => {
         </>
     );
 };
-
-export default MenuGroup;

@@ -1,8 +1,8 @@
 import { lazy } from "react";
+import { Loading } from "@/components/shared";
 import withSuspense from "@/hocs/with-suspense";
-import LoadingPage from "@/components/shared/loading-page";
 
-const LoadingComponent = () => <LoadingPage />;
+const LoadingComponent = () => <Loading />;
 
 export const AdminPage = withSuspense(
     lazy(() => import("@/pages/AdminPage")),

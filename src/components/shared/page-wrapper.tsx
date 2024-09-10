@@ -5,7 +5,7 @@ interface IPageWrapperProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
 }
 
-const PageWrapper = ({ children }: IPageWrapperProps) => {
+export const PageWrapper = ({ children }: IPageWrapperProps) => {
     const { toggleCollapse } = useSidebarToggle();
 
     return (
@@ -19,5 +19,3 @@ const PageWrapper = ({ children }: IPageWrapperProps) => {
         </div>
     );
 };
-
-export default PageWrapper;

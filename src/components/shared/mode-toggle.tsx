@@ -8,7 +8,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const ModeToggle = () => {
+export const ModeToggle = () => {
     const { setTheme, theme } = useTheme();
 
     // Hàm kiểm tra theme hiện tại và trả về icon check
@@ -49,4 +49,3 @@ const ModeToggle = () => {
         </DropdownMenu>
     );
 };
-export default ModeToggle;

@@ -1,11 +1,10 @@
-import ModeToggle from "@/components/shared/mode-toggle";
-import UserNav from "@/components/shared/user-nav";
+import { ModeToggle, UserNav } from "@/components/shared";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useSidebarToggle } from "@/stores/use-sidebar-toggle";
 import { Menu } from "lucide-react";
 
-const Header = () => {
+export const Header = () => {
     const { invokeToggleCollapse, toggleCollapse } = useSidebarToggle();
     const handleSideBarToggle = () => {
         invokeToggleCollapse();
@@ -39,5 +38,3 @@ const Header = () => {
         </header>
     );
 };
-
-export default Header;

@@ -13,7 +13,7 @@ import {
 import { ROUTES } from "@/constants/routes";
 import { Link } from "react-router-dom";
 
-const UserNav = () => {
+export const UserNav = () => {
     return (
         <div>
             <DropdownMenu>
@@ -59,5 +59,3 @@ const UserNav = () => {
         </div>
     );
 };
-
-export default UserNav;

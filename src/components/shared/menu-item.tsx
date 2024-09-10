@@ -8,7 +8,7 @@ interface MenuItemProps {
     item: ISideNavItem;
 }
 
-const MenuItem = ({ item }: MenuItemProps) => {
+export const MenuItem = ({ item }: MenuItemProps) => {
     const { toggleCollapse } = useSidebarToggle();
     const [subMenuOpen, setSubMenuOpen] = useState<boolean>(false);
     const location = useLocation();
@@ -72,5 +72,3 @@ const MenuItem = ({ item }: MenuItemProps) => {
         </Link>
     );
 };
-
-export default MenuItem;

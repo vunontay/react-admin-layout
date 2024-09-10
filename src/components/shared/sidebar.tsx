@@ -1,9 +1,9 @@
-import MenuGroup from "@/components/shared/menu-group";
+import { MenuGroup } from "@/components/shared";
+import { useSidebarToggle } from "@/stores/use-sidebar-toggle";
 import { SIDEBAR_ITEM } from "@/constants/sizebar";
 import { cn } from "@/lib/utils";
-import { useSidebarToggle } from "@/stores/use-sidebar-toggle";
 
-const Sidebar = () => {
+export const Sidebar = () => {
     const { toggleCollapse } = useSidebarToggle();
 
     return (
@@ -64,5 +64,3 @@ const Sidebar = () => {
         </aside>
     );
 };
-
-export default Sidebar;

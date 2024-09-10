@@ -1,6 +1,6 @@
 import { ClipLoader } from "react-spinners";
 
-const LoadingPage = () => {
+export const Loading = () => {
     return (
         <div className="flex flex-col items-center justify-center h-screen">
             <ClipLoader
@@ -9,9 +9,6 @@ const LoadingPage = () => {
                 aria-label="Loading Spinner"
                 data-testid="loader"
             />
-            <span className="mt-4 text-xl font-semibold">Đang tải...</span>
         </div>
     );
 };
-
-export default LoadingPage;

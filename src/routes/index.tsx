@@ -2,7 +2,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { ROUTES } from "@/constants/routes";
 import { AdminPage, LoginPage } from "@/routes/lazy-components";
-import MainLayout from "@/components/shared/layout";
+import { MainLayout } from "@/components/shared";
 import NotFoundPage from "@/pages/NotFoundPage";
 
 export const router = createBrowserRouter([

@@ -1,9 +1,7 @@
 import { Outlet } from "react-router-dom";
-import Sidebar from "@/components/shared/sidebar";
-import Header from "@/components/shared/header";
-import PageWrapper from "@/components/shared/page-wrapper";
+import { Header, PageWrapper, Sidebar } from "@/components/shared";
 
-const MainLayout = () => {
+export const MainLayout = () => {
     return (
         <>
             <div className="flex min-h-screen">
@@ -16,5 +14,3 @@ const MainLayout = () => {
         </>
     );
 };
-
-export default MainLayout;
